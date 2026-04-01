@@ -1,2 +1,2 @@
 # Amazon-clone
-A fully responsive Amazon marketplace clone built with HTML, CSS
+A fully responsive Amazon marketplace clone built with HTML, CSS , JAVASCRIPT
