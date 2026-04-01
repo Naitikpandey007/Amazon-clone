@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(227, 227, 227);
+}
+.navbar{
+    height: 60px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+
+.logo{
+    background-image: url(images/amazon_logo.png);
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+}
+
+.border{
+    border: 1.5px solid transparent;
+    
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.first-add{
+    font-size: 0.85rem;
+    margin-left: 15px ;
+}
+
+.sec-add {
+    font-size: 1rem;
+}
+
+
+/**box3**/
+
+.nav-search{
+    display: flex;
+    margin-left: 10px;
+    height: 45px;
+    width: 600px;
+    border-radius: 4px;
+  
+
+}
+
+.select-search{
+    width: 50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px ;
+    text-align: center;
+    border: none;
+    background-color: #f9ebeb;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+.input-search{
+    width: 100%;
+    font-size: 14px;
+    border: none;
+}
+
+
+.search-icon{
+    background-color: rgb(255, 192, 19);
+    color: black;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px 
+}
+
+
+/**box 4 and 5 **/
+
+.nav-signin{
+    margin-left: 15px;
+    align-items: center;
+   
+}
+
+.nav-signin span{
+    font-size: 0.72rem;
+
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.nav-return{
+    margin-left: 10px;
+    align-items: center;
+
+}
+
+.nav-return span{
+    font-size: 0.72rem;
+}
+
+/** box 6 **/
+.nav-cart{
+    margin-left: 10px;
+}
+.nav-cart i{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+/** panel box **/
+.panel{
+    height: 40px;
+    background-color: #363636;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+     
+}
+
+.panel i{
+    margin-left: 15px;
+}
+
+.panel-ops{
+    display: flex;
+    margin-left: 15px;
+}
+
+.panel-ops p{
+   margin-left: 14px;
+}
+
+.hero-section{
+    background-image: url(images/hero_image.jpg);
+    background-size: cover;
+    height: 250px;
+}
+
+
+.shop-section{
+    display: flex;
+   justify-content: space-evenly;
+   background-color: pink;
+}
+
+.box{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+}
+
+.box-img{
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content a{
+   text-decoration: none;
+}
+
+/** best selling books column **/
+.box-content1 {
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.box-content1 h2{
+    margin-bottom: 10px;
+}
+
+.books-row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    overflow-x: auto; /* optional scroll */
+}
+
+.box-img1 {
+    min-width: 120px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/** footer **/
+.footer-panel{
+    margin-top: 15px;
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    background-color: #232f3e;
+    margin: auto;
+    max-width: 100vw;
+    padding: 30px;
+    text-align: center;
+
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+       
+}
+
+.footer a{
+    color: rgb(255, 253, 253);
+    font-size: 14px;
+    
+}
+
+
+.lastfooter-panel{
+    background-color: #0f1111;
+    color: white;
+    height: 90px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.pages{
+    padding: 15px;
+}
+
+.pages a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/* Media queries for tablets and mobile screen */
+
+
+/* =====================================================
+   PASTE THIS AT THE VERY BOTTOM OF YOUR style.css
+   (replaces the "Media queries" comment at the end)
+   ===================================================== */
+
+/* ---- TABLET: 900px and below ---- */
+@media (max-width: 900px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 10px;
+        gap: 6px;
+        justify-content: space-between;
+    }
+
+    /* Search bar drops to its own full-width row */
+    .nav-search {
+        order: 10;       /* pushes it to the next row */
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Hide delivery address - saves space */
+    .nav-add {
+        display: none;
+    }
+
+    /* PANEL wraps */
+    .panel {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 6px 0;
+        gap: 4px;
+    }
+
+    .panel-ops {
+        flex-wrap: wrap;
+        gap: 4px 10px;
+    }
+
+    .panel-ops p {
+        font-size: 13px;
+        margin-left: 8px;
+    }
+
+    /* SHOP SECTION: 2 columns */
+    .shop-section {
+        flex-wrap: wrap;
+        background-color: #e3e3e3;
+        gap: 14px;
+        padding: 14px;
+        justify-content: center;
+    }
+
+    .box {
+        width: 45%;      /* 2 cards per row */
+        height: auto;
+    }
+
+    .box-img {
+        height: 200px;
+    }
+
+    /* BOOKS: 5 per row, scrollable */
+    .books-row {
+        gap: 8px;
+    }
+
+    .box-img1 {
+        min-width: 100px;
+        height: 150px;
+    }
+
+    /* FOOTER: 2 columns */
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* ---- MOBILE: 600px and below ---- */
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 6px 8px;
+        gap: 4px;
+    }
+
+    .nav-logo {
+        width: 80px;
+        height: 40px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    /* Hide signin & returns secondary text */
+    .nav-signin .nav-second,
+    .nav-return .nav-second {
+        display: none;
+    }
+
+    .nav-signin span,
+    .nav-return span {
+        font-size: 11px;
+    }
+
+    /* Smaller cart icon */
+    .nav-cart i {
+        font-size: 24px;
+    }
+
+    .nav-cart {
+        font-size: 13px;
+        margin-left: 6px;
+    }
+
+    /* Search bar */
+    .nav-search {
+        height: 38px;
+    }
+
+    .input-search {
+        font-size: 13px;
+    }
+
+    /* HERO shorter on mobile */
+    .hero-section {
+        height: 160px;
+    }
+
+    /* SHOP SECTION: 1 column, full width */
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-img {
+        height: 180px;
+    }
+
+    .box-content h2 {
+        font-size: 15px;
+    }
+
+    /* BOOKS: horizontal scroll on mobile */
+    .box-content1 {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .box-content1 h2 {
+        font-size: 16px;
+    }
+
+    .books-row {
+        flex-wrap: nowrap;         /* keeps scroll working */
+        overflow-x: auto;
+        gap: 8px;
+        padding-bottom: 6px;       /* space for scrollbar */
+        -webkit-overflow-scrolling: touch;  /* smooth scroll on iOS */
+    }
+
+    .box-img1 {
+        min-width: 90px;
+        height: 130px;
+        flex-shrink: 0;            /* prevents squishing */
+    }
+
+    /* FOOTER */
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    /* LAST FOOTER */
+    .lastfooter-panel {
+        height: auto;
+        padding: 14px 10px;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .pages a {
+        font-size: 12px;
+    }
+
+    .copyright {
+        padding-bottom: 10px;
+        font-size: 11px;
+    }
+}
+
+/* ---- SMALL MOBILE: 400px and below ---- */
+@media (max-width: 400px) {
+
+    /* Footer: 1 column */
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    /* Smaller book thumbnails */
+    .box-img1 {
+        min-width: 75px;
+        height: 110px;
+    }
+
+    /* Panel text smaller */
+    .panel-ops p {
+        font-size: 11px;
+    }
+
+    /* Hide Returns on very small */
+    .nav-return {
+        display: none;
+    }
+}
